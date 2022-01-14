@@ -2,6 +2,7 @@ var _work = new work();
 
 document.getElementById('formSubmit').addEventListener("submit", function(event){
     event.preventDefault();
+    var work  = readWork();
    
 })
 
@@ -16,5 +17,10 @@ function readWork() {
 function resetForm() {
 
     document.getElementById("inputTitle").value = "";
+    
+}
+
+function insertNewRow(){
+
     
 }
