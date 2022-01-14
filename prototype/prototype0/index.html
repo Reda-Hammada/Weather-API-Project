@@ -4,9 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Prototype0</title>
 </head>
-<body>
-    
+<body class="sb-nav-fixed">
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_content">
+            <main>
+                <div >
+                    <h1 >Ouvrages</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li ><a>Tableau de bord</a></li>
+                        <li >Ouvrages</li>
+                    </ol>
+
+                     
+                        <div>
+
+                            <form id="formSubmit" autocomplete="off">
+                                <div class="col-md-6">
+                                    <label for="inputTitle" >Title</label>
+                                    <input type="text"  id="inputTitle">
+                                </div>
+                            
+                                <div>
+                                    <button id="submitButton" type="submit">Ajouter</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    <div class="card mb-4">
+                        <div>
+                            📘
+                        </div>
+                        <div class="card-body">
+                            <table class="table" id="worksTable">
+                                <thead>
+                                    <tr>
+                                        <th>id</th>
+                                        <th>Auteur</th>
+                                        <th>Actions</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                 
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid px-4">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; Your Website 2021</div>
+                        <div>
+                            <a href="#">Privacy Policy</a>
+                            &middot;
+                            <a href="#">Terms &amp; Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
 </body>
 </html>
