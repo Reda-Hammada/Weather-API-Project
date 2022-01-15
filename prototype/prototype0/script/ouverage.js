@@ -1,4 +1,4 @@
-var _work = new work();
+var _work = new workManager();
 
 document.getElementById('formSubmit').addEventListener("submit", function(event){
     event.preventDefault();
@@ -9,7 +9,7 @@ document.getElementById('formSubmit').addEventListener("submit", function(event)
 
 function readWork() {
 
-    var work = new Worker();
+    var work = new work();
     work.title = document.getElementById("inputTitle").value;
     return work;
 }
@@ -21,6 +21,16 @@ function resetForm() {
 }
 
 function insertNewRow(){
+    var workList = workManager.workList;
+    var tableBody = document.getElementById("worksTable").getElementsByTagName('tbody')[0];
 
+    while(tableBody.rows.length > 0){
+        tableBody.deleteRow(0);
+    }
+
+    for(var i = 0; i < workList.length; i++){
+        var newRow = tableBody.insertRow(table.length);
+        newRow.insertCell(0).innerHTML = workList[i].id;
+    }
 
 }

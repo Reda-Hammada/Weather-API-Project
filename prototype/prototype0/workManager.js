@@ -7,10 +7,11 @@ class workManager {
     }
 
     addWork(work){
-        this.#counter = this.#counter + 1
-        work.id = this.#counter
-        this.#workList.push(work)
+        this.#counter = this.#counter + 1;
+        work.id = this.#counter;
+        this.#workList.push(work);
     }
 
-    get work
+
+
 }  
