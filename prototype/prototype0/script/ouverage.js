@@ -3,6 +3,8 @@ var _work = new workManager();
 document.getElementById('formSubmit').addEventListener("submit", function(event){
     event.preventDefault();
     var work  = readWork();
+    insertNewRow();
+    resetForm();
    
 })
 
