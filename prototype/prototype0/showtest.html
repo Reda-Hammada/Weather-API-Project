@@ -1,5 +1,13 @@
 <script src="work.js"></script>
 <script src="workManager.js"></script>
 <script>
-    
+    var work_Manager = new workManager;
+    console.log("before :" + work_Manager.workList);
+    var work = new Work();
+    work.title = 'test1';
+    work_Manager.addWork(work);   
+    var work1 = new Work();
+    work1.title = 'test2';
+    work_Manager.addWork(work1);
+    console.log(work_Manager.workList); 
 </script>
