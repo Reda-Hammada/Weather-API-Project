@@ -1,7 +1,5 @@
 var _work = new workManager();
 
-var selectedRow = null;
-var workId = null
 
 document.getElementById('formSubmit').addEventListener("submit", function(event){
     event.preventDefault();
@@ -22,7 +20,6 @@ document.getElementById('formSubmit').addEventListener("submit", function(event)
 function resetForm() {
 
     document.getElementById("inputTitle").value = "";
-    selectedRow = null;
     
 }
 
