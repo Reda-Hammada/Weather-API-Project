@@ -1,5 +1,4 @@
-class work{
-
+class Work {
     #_id;
     #_title;
 

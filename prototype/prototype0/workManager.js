@@ -1,5 +1,5 @@
 class workManager {
-    #workList = [];
+    #workList= [];
     #counter = 0;
 
     get workList(){
@@ -12,6 +12,6 @@ class workManager {
         this.#workList.push(work);
     }
 
-
+    
 
 }  

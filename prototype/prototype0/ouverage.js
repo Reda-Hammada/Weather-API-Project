@@ -1,8 +1,12 @@
 var _work = new workManager();
 
+var selectedRow = null;
+var workId = null
+
 document.getElementById('formSubmit').addEventListener("submit", function(event){
     event.preventDefault();
-    var Work  = readWork();
+    var work = readWork();
+    _work.addWork(work);
     insertNewRow();
     resetForm();
    
@@ -10,7 +14,7 @@ document.getElementById('formSubmit').addEventListener("submit", function(event)
 
 
     function readWork() { 
-    var work = new work();
+    var work = new Work();
     work.title = document.getElementById("inputTitle").value;
     return work;
 }
@@ -18,11 +22,12 @@ document.getElementById('formSubmit').addEventListener("submit", function(event)
 function resetForm() {
 
     document.getElementById("inputTitle").value = "";
+    selectedRow = null;
     
 }
 
 function insertNewRow(){
-    var workList = workManager.workList;
+    var workList = _work.workList;
     var tableBody = document.getElementById("worksTable").getElementsByTagName('tbody')[0];
 
     while(tableBody.rows.length > 0){
@@ -30,25 +35,13 @@ function insertNewRow(){
     }
 
     for(var i = 0; i < workList.length; i++){
-        var newRow = tableBody.insertRow(table.length);
-        newRow.insertCell(0).innerHTML = workList[i].id;
+
+        var newRow = tableBody.insertRow(tableBody.length);
+        cell1 = newRow.insertCell(0);
+        cell1.innerHTML = workList[i].id;
         cell2 = newRow.insertCell(1);
         cell2.innerHTML = workList[i].title;
-
-        var editButton = document.createElement("button");
-        editButton.document.createTextNode("edit");
-        editButton.setAttribute("onclick", 'onEdit(this)')
-        var deleteButton  = document.createElement("button");
-        deleteButton.document.createTextNode("Delete");
-        deleteButton.setAttribute("onclick", "onDelete(this)");
-
-        cell3 = newRow.insertCell(2);
-        cell3.appendChild(editButton)
-        cell3.appendChild(deleteButton)
-
-
-
-
     }
+
 
 }
