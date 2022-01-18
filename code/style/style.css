@@ -5,9 +5,17 @@
    
 }
 
+body{
+
+    width: 100%;
+}
+
 .headerContainer{
 
-    background-image: url(../images/pexels-photo-314726.jpeg);
-    height: 300px;
-    background-size: cover;
+    background-image: url(../images/pexels-lumn-167699.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 330px;
+    width: 100%;
+    
 }
