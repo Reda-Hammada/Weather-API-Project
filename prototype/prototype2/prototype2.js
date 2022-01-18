@@ -2,7 +2,7 @@
 let city; 
 let url;
 let paragraph ;
-var donnes;
+let datas;
 
 
 
@@ -20,7 +20,7 @@ function show(){
 
 .then(function(data){
 
-  donnes = data;
+  datas = data;
   paragraph.innerHTML = donnes.main.temp;
 
 })
