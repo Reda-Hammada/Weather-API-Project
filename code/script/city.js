@@ -1,4 +1,4 @@
-class city{
+class City{
     #name;
     #country;
     #description;
