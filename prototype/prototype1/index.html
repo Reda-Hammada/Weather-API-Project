@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fetch  API prototype</title>
+    <title>fetch api & ajax</title>
 </head>
 <body>
-    <div>
-        <p id="city"></p>
-    </div>
-    <script></script>
-    <script src="prototype1.js"></script>
+    <script>
+        fetch("data.json")
+            .then(function(response){
+
+                return response.json();
+            })
+
+            .then(function(data){
+                for(var i = 0; i < data.length; i++){
+                    document.write("<p>" + data[i].person + " " + data[i].age + "</p>")
+                }
+            })
+    </script>
 </body>
 </html>
