@@ -1,0 +1,13 @@
+*{
+
+   margin: 0;
+   padding: 0;
+   
+}
+
+.headerContainer{
+
+    background-image: url(../images/pexels-photo-314726.jpeg);
+    height: 300px;
+    background-size: cover;
+}
