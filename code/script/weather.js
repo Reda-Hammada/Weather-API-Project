@@ -9,6 +9,7 @@ document.getElementById('searchForm').addEventListener("submit", function show(e
     event.preventDefault();
     document.getElementById('info-container').style.display = "flex";
 
+    
     // input 
     search = document.getElementById('searchBar').value;
     url = "https://api.openweathermap.org/data/2.5/weather?q="+search+"&appid=0bf1faee1a5ca7e5e899dd845e4e0d44&units=metric";

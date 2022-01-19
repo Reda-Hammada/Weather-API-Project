@@ -9,16 +9,14 @@
     <link rel="stylesheet" href="style/style.css">
     <title>Weather</title>
 </head>
-<body class="--bs-font-sans-serif:Roboto h-100 w-100">
+<body class="ultimateContainer --bs-font-sans-serif:Roboto h-100 w-100">
     <header class="headerContainer  w-100">
-        <nav class=" d-flex flex-row justify-content-between  ">
+        <nav class=" d-flex flex-row justify-content-center  ">
             <div class="d-flex flex-row mt-5 ms-5">
                 <i class="fas fa-cloud display-2 text-white"></i>
                 <h1 class="display-6 ps-2 pt-2 fw-bold">Weather App</h1>
             </div>
-            <div>
-                <img  class ="float-end me-5 my-5" src="images/moon.svg" alt="Dark Theme Button">
-            </div>
+           
         </nav>
     
     </header>
@@ -26,13 +24,13 @@
         <section>
             <div class="text-center">
                 <form id="searchForm">
-                    <input class ="rounded text-center border-1 mt-5  w-25" type="text" id ="searchBar" placeholder="Enter the city here">
+                    <input class ="rounded text-center border-1 mt-5  w-50" type="text" id ="searchBar" placeholder="Enter the city here">
                     <input id="btn" type="submit" class="text-center button btn-light btn-outline-secondary border rounded-3" value="search" >
                 </form>
             </div>
         </section>
         <section id="info-container" class="bg-light info-container border  rounded-3 w-50 mt-5 ms-auto me-auto  info-container">
-            <div class="d-block w-100 ms-auto me-auto">
+            <div class="d-block w-100 ms-auto me-auto pt-4">
                <p id="info1" class="text-center
                 display-5"></p>
                <p class="display-6 text-center" id="info2"></p>
@@ -45,5 +43,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="script/weather.js"></script>
 <script src="script/city.js"></script>
+<script src="script/theme.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 
-body{
+.ultimateContainer{
 
     background-image: url(../images/pexels-eberhard-grossgasteiger-1292115.jpg);
     background-repeat: no-repeat;
@@ -28,4 +28,8 @@ input {
 ul li {
 
     list-style: none;
+}
+
+#moon:hover {
+cursor: pointer;
 }
