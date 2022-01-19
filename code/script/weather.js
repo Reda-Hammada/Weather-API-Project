@@ -3,13 +3,14 @@ let search;
 let url;
 let paragraph;
 let city;
-
+let form;
+//input 
+form = document.getElementsByClassName('')
 // treatment 
-
-function show(){
+form.addEventListener('submit' ,function show(){
     // input 
-    city = new City;
     search = document.getElementById('searchBar');
+    city = new City;
     url = "https://api.openweathermap.org/data/2.5/weather?q="+search.value+"&appid=0bf1faee1a5ca7e5e899dd845e4e0d44";
 
 
@@ -22,6 +23,6 @@ function show(){
     // output
     .then(function(data){
         
-        
+        alert(data.main.temp);
     })
-}
+} );
