@@ -1,4 +1,4 @@
-class city{
+class City{
     #name;
     #country;
     #description;
@@ -11,7 +11,7 @@ class city{
     }
 
     set name(value){
-        this.#_name = value;
+        this.#name = value;
     }
     get country(){
 
