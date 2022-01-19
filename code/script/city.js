@@ -3,7 +3,6 @@ class City{
     #country;
     #description;
     #humidity;
-    #wind;
 
     get name(){
 
@@ -40,13 +39,5 @@ class City{
         this.#humidity = value;
     }
 
-    get wind(){
-
-        return this.#wind;
-    }
-
-    set wind(value){
-        this.#wind = value;
-    }
 
 } 

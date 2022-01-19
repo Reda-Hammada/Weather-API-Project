@@ -16,6 +16,7 @@ input {
 .info-container {
     
     height: 300px;
+    display: none;
 }
 
 #btn {
