@@ -11,7 +11,19 @@ input {
     height: 40px;
 }
 
+
+
 .info-container {
     
     height: 400px;
+}
+
+#btn {
+
+    width: 100px;
+}
+
+ul li {
+
+    list-style: none;
 }

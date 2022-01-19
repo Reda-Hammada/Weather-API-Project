@@ -25,21 +25,16 @@ document.getElementById('searchForm').addEventListener("submit", function show(e
 
            city = new City();
            city.name = data.name;
-           city.country = data.country;
-           city.description = data.description;
+           city.country = data.sys.country;
+           city.description = data.weather.description;
            city.humidity = data.main.temp;
            city.wind = data.wind.speed;
-
         
-
-        let paragraph = document.getElementById('para1');
-        paragraph.innerHTML = city.humidity;
-       
+           list1 = document.getElementById('list1');
+           list1.innerHTML = "location: " + city.name + ',' + city.country;
+           list2 = document.getElementById('list2').innerHTML = "weather: " + city.description;
     })
 
-    .catch(function(err){
-
-        alert('wrong city');
-    })
+    
     
 });
