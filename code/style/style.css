@@ -5,3 +5,13 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+input {
+
+    height: 40px;
+}
+
+.info-container {
+    
+    height: 400px;
+}
