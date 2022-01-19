@@ -8,11 +8,21 @@
     <link rel="stylesheet" href="style/style.css">
     <title>Weather</title>
 </head>
-<body>
-    <header class="headerContainer container-fluid">
-        <nav class="text-center">
-            <input class ="rounded-pill border-1 mt-5" type="text" id ="searchBar">
+<body class="--bs-font-sans-serif:Roboto">
+    <header class="headerContainer  w-100">
+        <nav class=" d-flex flex-row justify-content-between  ">
+            <div>
+                <i class="fas fa-cloud"></i>
+                <h1 class="text-dark r display-6 mt-5 ms-5">Weather Application</h1>
+            </div>
+            <div>
+                <img class ="float-end me-5 my-5" src="images/moon.svg" alt="Dark Theme Button">
+            </div>
         </nav>
+        <div class="text-center">
+            <input class ="rounded-pill text-center border-1 mt-5  w-25 h-50" type="text" id ="searchBar" placeholder="Enter the city here">
+
+        </div>
     </header>
     <main>
         <section>

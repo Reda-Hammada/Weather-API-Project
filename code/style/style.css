@@ -1,19 +1,7 @@
-*{
-
-   margin: 0;
-   padding: 0;
-   
-}
 
 body{
 
-    width: 100%;
-}
-
-.headerContainer{
-
-    background-image: url(../images/pexels-photo-314726.jpeg);
+    background-image: url(../images/pexels-eberhard-grossgasteiger-1292115.jpg);
     background-repeat: no-repeat;
-    height: 330px;
-    
+    background-size: cover;
 }
