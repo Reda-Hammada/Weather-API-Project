@@ -4,14 +4,13 @@ let url;
 let paragraph;
 let city;
 let form;
-//input 
-form = document.getElementsByClassName('')
+
 // treatment 
-form.addEventListener('submit' ,function show(){
+document.getElementsByClassName('searchForm').addEventListener('submit', function show(event){
+    event.preventDefault();
     // input 
-    search = document.getElementById('searchBar');
-    city = new City;
-    url = "https://api.openweathermap.org/data/2.5/weather?q="+search.value+"&appid=0bf1faee1a5ca7e5e899dd845e4e0d44";
+    search = document.getElementById('searchBar').value;
+    url = "https://api.openweathermap.org/data/2.5/weather?q="+search+"&appid=0bf1faee1a5ca7e5e899dd845e4e0d44";
 
 
     fetch(url)
@@ -23,6 +22,11 @@ form.addEventListener('submit' ,function show(){
     // output
     .then(function(data){
         
-        alert(data.main.temp);
+        console.log(data.main.temp);
     })
-} );
+
+    .catch(function(err){
+
+        alert('You entered a wrong city name');
+    })
+});
