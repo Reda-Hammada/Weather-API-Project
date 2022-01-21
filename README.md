@@ -1,6 +1,7 @@
 # Weather Application:  
 ## About:  
  Weather application is an application that uses fetch API to display weather details based on the searched city   
+![](https://github.com/Reda-Hammada/Weather-API-Project/blob/main/Capture.PNG)
 ## Built With:  
 1- HTML5  
 2- CSS3  
